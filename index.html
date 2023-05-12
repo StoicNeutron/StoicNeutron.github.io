@@ -1,9 +1,153 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Portfolio</title>
+
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-<h1>Hello World</h1>
+
+  <!-- Top Navigation Bar -->
+  <nav>
+    <div class="top_bar">
+      <div class="brand">Samnang Thorn</div>
+        <ul class="menu">
+          <li class="menu_ele"><a href="">About</a></li>
+          <li class="menu_ele"><a href="">Skills</a></li>
+          <li class="menu_ele"><a href="">Projects</a></li>
+          <li class="menu_ele"><a href="">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Intro Header -->
+  <div class="container-heading" id="home">
+    <div class="section">
+      <h3>Hello there, I am</h3>
+      <h1>Samnang Thorn</h1>
+      <p>Junior at George Mason University</p>
+    </div>
+    <img src="photo1.png" alt="">
+  </div>
+
+  <!-- About -->
+  <div class="about" id="about">
+    <div class="container">
+      <div class="image">
+        <img src="" alt="">
+      </div>
+      <div class="about-me">
+        <h1>About Me</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim architecto ut eos ea eveniet temporibus alias odit culpa explicabo ipsa fugiat, voluptate nam harum similique dolores vitae ab, neque, debitis corrupti possimus! Minus magni, deserunt dolorem saepe ipsa tempore autem.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="my-skills" id="skills">
+    <div class="container">
+      <h1>Skills</h1>
+      <div class="skills">
+        <div class="item-skills html">
+          <p>Java</p>
+        </div>
+        <div class="item-skills css">
+          <p>C</p>
+        </div>
+        <div class="item-skills javascript">
+          <p>Python</p>
+        </div>
+        <div class="item-skills mysql">
+          <p>Javascript</p>
+        </div>
+        <div class="item-skills node-js">
+          <p>Android Studio</p>
+        </div>
+        <div class="item-skills laravel">
+          <p>Spring Boot</p>
+        </div>
+        <div class="item-skills react">
+          <p>SQLite</p>
+        </div>
+        <div class="item-skills git">
+          <p>Git</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="project" id="project">
+    <div class="container">
+      <h1 data-aos="zoom-out-right">Project</h1>
+      <div class="my-project">
+        <img data-aos="fade-up" src="https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        <img data-aos="fade-up" src="https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        <img data-aos="fade-up" src="https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        <img data-aos="fade-up" src="https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        <img data-aos="fade-up" src="https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        <img data-aos="fade-up" src="https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Information -->
+  <div class="contact-us" id="contact-us">
+    <div class="container">
+      <h1>Contact Information</h1>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="social-media">
+        <ul>
+        </li>
+        <li class="item linkedin">
+          <a href="">
+            
+          </a>
+      </li>
+      <li class="item github">
+        <a href="">
+          
+        </a>
+    </li>
+          <li class="item facebook">
+            <a href="">
+
+            </a>
+        </li>
+          <li class="item instagram">
+            <a href="">
+
+            </a>
+        </ul>
+      </div>
+    </div>
+    <div class="copy_right">
+      <p>&copy; 2023 Samnang Thorn</p>
+    </div>
+  </footer>
+
+  <a href="#home" class="to-top" data-aos="zoom-in-down">
+    <button>^</button>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
