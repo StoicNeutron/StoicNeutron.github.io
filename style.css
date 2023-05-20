@@ -162,6 +162,7 @@ nav .menu_ele a:hover {
 
   display: flex;
   margin: auto;
+  
 }
 
 .about img {
@@ -183,8 +184,8 @@ nav .menu_ele a:hover {
 
 .about h1 {
 
-  font-size: 1.8em;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .about p {
@@ -192,30 +193,132 @@ nav .menu_ele a:hover {
   line-height: 2;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 800px) {
 
-  .about .greeting_txt {
-    width: 90%;
-    padding: 40px 0;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    'about about'
-    'foto foto';
-    gap: 10px;
+  .about .container {
+
+    display: block;
+    padding-bottom: 30px;
   }
 
-  .about .image {
-    grid-area: foto;
-  }
-  
-  .about .about-me {
-    grid-template-rows: 40px 1fr;
-    grid-area: about;
-    gap: 10px;
+  .about .txt_section{
+
+    margin: auto;
+    padding: 30px;
   }
 
   .about img {
-    width: 300px; 
+
+    display: none;
   }
 }
 
+/* *Skills */
+.skill_title{
+
+  text-align: center;
+  background: -webkit-linear-gradient(to right, #243B55, #348AC7); 
+  background: linear-gradient(to right, #243B55, #348AC7); 
+  color: white;
+  border-radius: 10px;
+  font-size: 25px;
+  margin: 30px;
+  padding: 5px;
+}
+
+.skills {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.skills .row {
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.skills .image-container {
+
+  text-align: center;
+  margin: 0 20px;
+}
+
+.skill img {
+
+  background-color: #243B55;
+  padding: 2px;
+  width: 100px;
+  height: 100px;
+}
+
+.skills p {
+
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Projects */
+.project {
+
+  background: -webkit-linear-gradient(to right, #348AC7, #243B55); 
+  background: linear-gradient(to right, #348AC7, #243B55); 
+}
+
+.project .container {
+
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.project h1 {
+
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.project img {
+
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.project .my-project {
+
+  display: grid;
+  margin-bottom: 80px;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .project .container {
+
+    width: 90%;
+  }
+  
+  .project .my-project {
+
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 667px) {
+
+  .project .container {
+    width: 85%;
+  }
+
+  .project .my-project {
+    gap: 40px;
+  }
+}
