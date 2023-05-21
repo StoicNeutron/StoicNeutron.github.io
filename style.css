@@ -29,21 +29,6 @@ nav {
   right: 0;
 }
 
-nav.transformed {
-
-  background: -webkit-linear-gradient(to right, #348AC7, #243B55); 
-  background: linear-gradient(to right, #348AC7, #243B55); 
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
 nav .top_bar {
 
   display: flex;
@@ -86,12 +71,15 @@ nav .menu_ele a:hover {
 /* Introduction Header */
 .intro_header {
 
+  background-image: url('animated2.gif');
+  background-size: contain;
+  background-blend-mode: lighten;
   display: grid;
   margin: auto;
   overflow: hidden;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: 600px;
-  grid-auto-columns: 600px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: 500px;
+  grid-auto-columns: 500px;
 }
 
 .intro_header .greeting_txt {
@@ -132,15 +120,6 @@ nav .menu_ele a:hover {
 .intro_header img {
 
   width: 90%;
-}
-
-/* for smaller width screen */
-@media only screen and (max-width: 750px) {
-
-  img{
-
-    display: none;
-  }
 }
 
 /* About */
@@ -251,8 +230,8 @@ nav .menu_ele a:hover {
 
   background-color: #243B55;
   padding: 2px;
-  width: 100px;
-  height: 100px;
+  width: minmax(25px, 75px);
+  height: minmax(25px, 75px);
 }
 
 .skills p {
@@ -321,4 +300,82 @@ nav .menu_ele a:hover {
   .project .my-project {
     gap: 40px;
   }
+}
+
+/* Contact Information */
+.contact{
+
+  height: 300px;
+}
+
+.contact .contact_title{
+
+  text-align: center;
+  background: -webkit-linear-gradient(to right, #243B55, #348AC7); 
+  background: linear-gradient(to right, #243B55, #348AC7); 
+  color: white;
+  border-radius: 10px;
+  font-size: 25px;
+  margin: 30px;
+  padding: 5px;
+}
+
+.social_media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 30%;
+  height: 80px;
+  padding: 20px;
+  box-sizing:content-box;
+}
+
+.contact img{
+  
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.contact img:hover{
+
+  background: -webkit-linear-gradient(to right, #243B55, #348AC7); 
+  background: linear-gradient(to right, #243B55, #348AC7); 
+  border-radius: 20px;
+}
+
+.contact p{
+
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer .copy_right {
+
+  color: white;
+  background: -webkit-linear-gradient(to right, #243B55, #348AC7); 
+  background: linear-gradient(to right, #243B55, #348AC7); 
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.back-to-top {
+
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.back-to-top img{
+
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 25px;
 }
