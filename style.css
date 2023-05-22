@@ -150,14 +150,34 @@ nav .menu_ele a:hover {
   font-size: 25px;
   font-weight: bold;
   color: white;
-  text-align: center;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .about p{
 
   color: white;
-  text-align:center;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+
+  .about img{
+
+    margin-left: 150px;
+  }
+
+  .about h1{
+
+    margin-top: 30px;
+  }
+
+  .about .description{
+
+    margin-left: 150px;
+    margin-right: 150px;
+  }
 }
 
 @media only screen and (max-width: 767px){
@@ -171,14 +191,11 @@ nav .menu_ele a:hover {
 
   .about img{
 
-    display: block; 
+    display: block;
     margin: auto;
     margin-top: 40px;
   }
 }
-
-
-
 
 /* *Skills */
 .skill_title{
@@ -204,6 +221,7 @@ nav .menu_ele a:hover {
 .skill .block1{
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -226,14 +244,6 @@ nav .menu_ele a:hover {
   margin: 0 20px;
 }
 
-.skill img {
-
-  background-color: #243B55;
-  padding: 2px;
-  width: minmax(25px, 75px);
-  height: minmax(25px, 75px);
-}
-
 .skills p {
 
   margin-top: 10px;
@@ -241,12 +251,12 @@ nav .menu_ele a:hover {
   text-align: center;
 }
 
-@media only screen and (max-width: 700px){
+@media (max-width: 800px) {
 
-  .skill .block1{
+  .skills{
 
-    display: block;
-    justify-content:safe;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -267,7 +277,7 @@ nav .menu_ele a:hover {
 
   color: white;
   text-align: center;
-  padding: 80px 0;
+  padding: 50px 0;
   font-size: 30px;
   font-weight: bold;
 }
