@@ -10,6 +10,9 @@ This is a repository for my personal portfolio website. The website showcases my
   <li>JavaScript</li>
 </ul>
 
+<h3>Live Portfolio</h3>
+You can access my live portfolio website at https://stoicneutron.github.io.
+
 <h3>Getting Started</h3>
 
 To run this project locally, follow these steps:
@@ -18,6 +21,9 @@ To run this project locally, follow these steps:
   <li>Navigate to the project directory: cd StoicNeutron.github.io</li>
   <li>Open the index.html file in your web browser.</li>
 </ol>
+
+<h3>License</h3>
+This project is licensed under the MIT License.
 
 <h3>Contact</h3>
 
