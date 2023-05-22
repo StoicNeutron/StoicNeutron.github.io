@@ -125,72 +125,60 @@ nav .menu_ele a:hover {
 /* About */
 .about {
   
+  display: flex;
   background: -webkit-linear-gradient(to right, #348AC7, #243B55); 
   background: linear-gradient(to right, #348AC7, #243B55); 
+  justify-content: space-betweens;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-.about .container {
+.about img{
 
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
-  gap: 50px;
-}
-
-.about .image {
-
-  display: flex;
-  margin: auto;
-  
-}
-
-.about img {
-
-  margin: 50px auto;
+  margin: 40px;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-.about .txt_section {
+.about .description{
 
-  padding-right: 20px;
-  color: white;
-  display: grid;
-  grid-template-rows: 20px 150px;
-  align-content: center;
-  gap: 25px;
+  margin: 40px;
+  padding: 20px;
 }
 
-.about h1 {
+.about h1{
 
   font-size: 25px;
   font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.about p {
-  
-  line-height: 2;
+.about p{
+
+  color: white;
+  text-align:center;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 767px){
 
-  .about .container {
+  .about{
 
     display: block;
-    padding-bottom: 30px;
+    text-align: center;
+    padding-top: 40px;
   }
 
-  .about .txt_section{
+  .about img{
 
+    display: block; 
     margin: auto;
-    padding: 30px;
-  }
-
-  .about img {
-
-    display: none;
+    margin-top: 40px;
   }
 }
+
+
+
 
 /* *Skills */
 .skill_title{
@@ -208,9 +196,21 @@ nav .menu_ele a:hover {
 .skills {
 
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 30px;
+  justify-content: center;
+}
+
+.skill .block1{
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill .block2{
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .skills .row {
@@ -239,6 +239,15 @@ nav .menu_ele a:hover {
   margin-top: 10px;
   font-size: 12px;
   text-align: center;
+}
+
+@media only screen and (max-width: 700px){
+
+  .skill .block1{
+
+    display: block;
+    justify-content:safe;
+  }
 }
 
 /* Projects */
