@@ -289,6 +289,13 @@ nav .menu_ele a:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
+.project h4{
+
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
 .project .my-project {
 
   display: grid;
@@ -331,7 +338,7 @@ nav .menu_ele a:hover {
 
   text-align: center;
   background: -webkit-linear-gradient(to right, #243B55, #348AC7); 
-  background: linear-gradient(to right, #243B55, #348AC7); 
+  background: linear-gradient(to right, #243B55, #348AC7);
   color: white;
   border-radius: 10px;
   font-size: 25px;
@@ -390,6 +397,7 @@ footer .copy_right {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  transition: 10s ease;
 }
 
 .back-to-top img{
