@@ -202,7 +202,7 @@ nav .menu_ele a:hover {
 
   text-align: center;
   background: -webkit-linear-gradient(to right, #243B55, #348AC7); 
-  background: linear-gradient(to right, #243B55, #348AC7); 
+  background: linear-gradient(to right, #243B55, #348AC7);
   color: white;
   border-radius: 10px;
   font-size: 25px;
@@ -214,7 +214,9 @@ nav .menu_ele a:hover {
 
   display: flex;
   align-items: center;
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
   justify-content: center;
 }
 
@@ -251,9 +253,44 @@ nav .menu_ele a:hover {
   text-align: center;
 }
 
-@media (max-width: 800px) {
+/* Addition CSS for Addition Block 3 from Skills Section */
+ .block3{
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+ }
+
+ .block3 .row{
+
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 20px;
+ }
+
+ .block3 .image-container {
+
+  text-align: center;
+  margin: 0 20px;
+}
+
+ .block3 .row .p{
+
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+ }
+
+ @media (max-width: 800px) {
 
   .skills{
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .block3{
 
     flex-direction: column;
     align-items: center;
