@@ -275,11 +275,16 @@ nav .menu_ele a:hover {
   margin: 0 20px;
 }
 
- .block3 .row .p{
+ .block3 p{
 
   margin-top: 10px;
   font-size: 12px;
   text-align: center;
+ }
+
+ .image-container img:hover {
+
+  filter: brightness(70%)
  }
 
  @media (max-width: 800px) {
@@ -324,6 +329,11 @@ nav .menu_ele a:hover {
   width: 100%;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.project img:hover {
+
+  filter: brightness(70%)
 }
 
 .project h4{
