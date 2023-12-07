@@ -313,6 +313,7 @@ nav .menu_ele a:hover {
 
   margin: auto;
   padding-bottom: 20px;
+  width: 90%;
 }
 
 .project h1 {
@@ -324,6 +325,29 @@ nav .menu_ele a:hover {
   font-weight: bold;
 }
 
+@keyframes glitch {
+  0% {
+    transform: translate(4px, 4px);
+    color: white; /* Red color */
+  }
+  25% {
+    transform: translate(4px, -4px);
+    color: lightskyblue; /* Green color */
+  }
+  50% {
+    transform: translate(-4px, 2px);
+    color: lightgreen; /* Red color */
+  }
+  75% {
+    transform: translate(-2px, -4px);
+    color: lightskyblue; /* Green color */
+  }
+  100% {
+    transform: translate(3px, -2px);
+    color: white; /* Red color */
+  }
+}
+
 .project img {
 
   width: 100%;
@@ -333,7 +357,8 @@ nav .menu_ele a:hover {
 
 .project img:hover {
 
-  filter: brightness(70%)
+  filter: brightness(70%);
+  animation: glitch 1s infinite linear;
 }
 
 .project h4{
@@ -347,31 +372,31 @@ nav .menu_ele a:hover {
 
   display: grid;
   margin-bottom: 80px;
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   gap: 50px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1200px) {
 
   .project .container {
 
-    width: 90%;
+    width: 92%;
   }
   
   .project .my-project {
 
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
   }
 }
 
-@media only screen and (min-width: 667px) {
+@media only screen and (max-width: 800px) {
 
   .project .container {
-    width: 85%;
+    width: 95%;
   }
 
   .project .my-project {
-    gap: 40px;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
   }
 }
 
