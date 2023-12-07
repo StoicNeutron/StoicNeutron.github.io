@@ -197,6 +197,47 @@ nav .menu_ele a:hover {
   }
 }
 
+/* *Slide Cards */
+.cards_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+@keyframes changeBorderColor {
+  0% { outline-color: #539cc1; }
+  25% { outline-color: #8fd3f4; }
+  50% { outline-color: white; }
+  75% { outline-color: #8fd3f4; }
+  100% { outline-color: #348AC7; }
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  outline: #333;
+  outline-style: solid;
+  outline-offset: 0px;
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  animation: changeBorderColor 3s infinite linear;
+}
+
+.card_text {
+  text-align: center;
+  padding: 20px;
+}
+
+.card_text h2 {
+  margin-top: 0;
+}
+
+
 /* *Skills */
 .skill_title{
 
@@ -206,7 +247,9 @@ nav .menu_ele a:hover {
   color: white;
   border-radius: 10px;
   font-size: 25px;
-  margin: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
   padding: 5px;
 }
 
@@ -284,7 +327,9 @@ nav .menu_ele a:hover {
 
  .image-container img:hover {
 
-  filter: brightness(70%)
+  filter: brightness(70%);
+  transform: translate(0px, -10px);
+
  }
 
  @media (max-width: 800px) {
@@ -358,13 +403,16 @@ nav .menu_ele a:hover {
 .project img:hover {
 
   filter: brightness(70%);
-  animation: glitch 1s infinite linear;
+  animation: glitch 0.1s infinite linear;
 }
 
 .project h4{
 
   color: white;
   text-align: center;
+}
+
+.project a {
   text-decoration: none;
 }
 
