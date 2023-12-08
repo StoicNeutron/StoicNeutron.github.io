@@ -208,13 +208,25 @@ nav .menu_ele a:hover {
 @keyframes changeBorderColor {
   0% { outline-color: #539cc1; }
   25% { outline-color: #8fd3f4; }
-  50% { outline-color: white; }
+  50% { outline-color: #9ed1ea; }
   75% { outline-color: #8fd3f4; }
   100% { outline-color: #348AC7; }
 }
 
+@keyframes changeBorderColorOnHover {
+  0% { outline-color: #ff8c94; }
+  25% { outline-color: #ffaea5; }
+  50% { outline-color: #ffd3b6; }
+  75% { outline-color: #ffaea5; }
+  100% { outline-color: #ff8c94; }
+}
+
+
 .card {
+  align-items: center;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: white;
   border-radius: 10px;
   outline: #333;
@@ -225,7 +237,18 @@ nav .menu_ele a:hover {
   height: 400px;
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  animation: changeBorderColor 3s infinite linear;
+  animation: changeBorderColor 4s infinite linear;
+}
+
+.card:hover{
+  animation: changeBorderColorOnHover 1s infinite linear;
+}
+
+.card img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
 }
 
 .card_text {
@@ -234,9 +257,8 @@ nav .menu_ele a:hover {
 }
 
 .card_text h2 {
-  margin-top: 0;
+  margin-top: 40px;
 }
-
 
 /* *Skills */
 .skill_title{
