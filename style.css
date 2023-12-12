@@ -200,9 +200,12 @@ nav .menu_ele a:hover {
 /* *Slide Cards */
 .cards_block {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 500px;
+  /* overflow: scroll; */
+  justify-content: center;
+  margin: 20px;
+  padding: 5px;
 }
 
 @keyframes changeBorderColor {
@@ -221,10 +224,10 @@ nav .menu_ele a:hover {
   100% { outline-color: #ff8c94; }
 }
 
-
 .card {
-  align-items: center;
   display: flex;
+  flex: 0 0 200px;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: white;
@@ -232,7 +235,6 @@ nav .menu_ele a:hover {
   outline: #333;
   outline-style: solid;
   outline-offset: 0px;
-  overflow: hidden;
   width: 300px;
   height: 400px;
   margin: 20px;
@@ -246,7 +248,8 @@ nav .menu_ele a:hover {
 
 .card img{
   max-width: 100%;
-  height: auto;
+  height: 100px;
+  width: 100px;
   display: block;
   margin: auto;
 }
@@ -260,11 +263,19 @@ nav .menu_ele a:hover {
   margin-top: 40px;
 }
 
+@media (max-width: 1000px) {
+
+  .cards_block {
+    overflow: scroll;
+    /* justify-content: left; */
+  }
+}
+
 /* *Skills */
 .skill_title{
 
   text-align: center;
-  background: -webkit-linear-gradient(to right, #243B55, #348AC7); 
+  background: -webkit-linear-gradient(to right, #243B55, #348AC7);
   background: linear-gradient(to right, #243B55, #348AC7);
   color: white;
   border-radius: 10px;
@@ -466,7 +477,8 @@ nav .menu_ele a:hover {
   }
 
   .project .my-project {
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    gap: 30px;
   }
 }
 
