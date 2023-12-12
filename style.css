@@ -267,7 +267,7 @@ nav .menu_ele a:hover {
 
   .cards_block {
     overflow: scroll;
-    /* justify-content: left; */
+    justify-content: left;
   }
 }
 
