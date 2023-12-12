@@ -477,14 +477,13 @@ nav .menu_ele a:hover {
   }
 
   .project .my-project {
-    grid-template-columns: repeat(2, minmax(180px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 15px;
   }
 }
 
 /* Contact Information */
 .contact{
-
   height: 300px;
 }
 
