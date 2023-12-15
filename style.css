@@ -9,20 +9,21 @@
 }
 
 body {
-
-  font-family: 'Open Sans', sans-serif;
+  background: -webkit-linear-gradient(to right, #461971, #243269);
+  background: linear-gradient(to right, #461971, #243269);
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Top Navigation Bar*/
 nav {
-
-  background: -webkit-linear-gradient(to right, #243B55, #348AC7); 
-  background: linear-gradient(to right, #243B55, #348AC7); 
+  /* 20% transparent transparency */
+  /* background-color: rgb(255, 255, 255, 0.2);*/
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
-  position: fixed;
+  /* position: fixed; */
   z-index: 9999;
   top: 0;
   left: 0;
@@ -62,7 +63,7 @@ nav .menu_ele a {
 
 nav .menu_ele a:hover {
 
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 15px;
   font-weight: 600;
@@ -70,10 +71,6 @@ nav .menu_ele a:hover {
 
 /* Introduction Header */
 .intro_header {
-
-  background-image: url('animated2.gif');
-  background-size: contain;
-  background-blend-mode: lighten;
   display: grid;
   margin: auto;
   overflow: hidden;
@@ -83,7 +80,7 @@ nav .menu_ele a:hover {
 }
 
 .intro_header .greeting_txt {
-
+  color: white;
   display: grid;
   grid-template-rows: repeat(3, 40px);
   align-content: center;
@@ -126,8 +123,6 @@ nav .menu_ele a:hover {
 .about {
   
   display: flex;
-  background: -webkit-linear-gradient(to right, #348AC7, #243B55); 
-  background: linear-gradient(to right, #348AC7, #243B55); 
   justify-content: space-betweens;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -256,7 +251,9 @@ nav .menu_ele a:hover {
 
 .card_text {
   text-align: center;
-  padding: 20px;
+  background-image: url('animated2.gif');
+  background-size:cover;
+  /* padding: 20px; */
 }
 
 .card_text h2 {
@@ -267,7 +264,7 @@ nav .menu_ele a:hover {
 
   .cards_block {
     overflow: scroll;
-    /* justify-content: left; */
+    justify-content: left;
   }
 }
 
@@ -275,8 +272,6 @@ nav .menu_ele a:hover {
 .skill_title{
 
   text-align: center;
-  background: -webkit-linear-gradient(to right, #243B55, #348AC7);
-  background: linear-gradient(to right, #243B55, #348AC7);
   color: white;
   border-radius: 10px;
   font-size: 25px;
@@ -323,7 +318,7 @@ nav .menu_ele a:hover {
 }
 
 .skills p {
-
+  color: white;
   margin-top: 10px;
   font-size: 12px;
   text-align: center;
@@ -383,8 +378,6 @@ nav .menu_ele a:hover {
 /* Projects */
 .project {
 
-  background: -webkit-linear-gradient(to right, #348AC7, #243B55); 
-  background: linear-gradient(to right, #348AC7, #243B55); 
 }
 
 .project .container {
@@ -490,8 +483,6 @@ nav .menu_ele a:hover {
 .contact .contact_title{
 
   text-align: center;
-  background: -webkit-linear-gradient(to right, #243B55, #348AC7); 
-  background: linear-gradient(to right, #243B55, #348AC7);
   color: white;
   border-radius: 10px;
   font-size: 25px;
@@ -521,9 +512,6 @@ nav .menu_ele a:hover {
 }
 
 .contact img:hover{
-
-  background: -webkit-linear-gradient(to right, #243B55, #348AC7); 
-  background: linear-gradient(to right, #243B55, #348AC7); 
   border-radius: 20px;
 }
 
@@ -537,8 +525,6 @@ nav .menu_ele a:hover {
 footer .copy_right {
 
   color: white;
-  background: -webkit-linear-gradient(to right, #243B55, #348AC7); 
-  background: linear-gradient(to right, #243B55, #348AC7); 
   padding: 20px;
   text-align: center;
   font-size: 18px;
