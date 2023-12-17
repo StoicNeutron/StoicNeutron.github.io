@@ -123,6 +123,11 @@ nav .menu_ele a:hover {
 }
 
 /* About */
+.about_wrapper{
+  background: -webkit-linear-gradient(to right, #348AC7, #243B55); 
+  background: linear-gradient(to right, #348AC7, #243B55);
+}
+
 .about {
   
   display: flex;
@@ -201,8 +206,8 @@ nav .menu_ele a:hover {
 .cards_block {
   display: flex;
   align-items: center;
-  height: 500px;
-  /* overflow: scroll; */
+  height: 360px;
+  overflow: scroll;
   justify-content: center;
   margin: 20px;
   padding: 5px;
@@ -236,7 +241,25 @@ nav .menu_ele a:hover {
   outline-style: solid;
   outline-offset: 0px;
   width: 300px;
-  height: 400px;
+  height: 300px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  animation: changeBorderColor 4s infinite linear;
+}
+
+.card_vip{
+  display: flex;
+  flex: 0 0 200px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: black;
+  border-radius: 10px;
+  outline: #333;
+  outline-style: solid;
+  outline-offset: 0px;
+  width: 300px;
+  height: 300px;
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   animation: changeBorderColor 4s infinite linear;
@@ -247,6 +270,14 @@ nav .menu_ele a:hover {
 }
 
 .card img{
+  max-width: 100%;
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+.card_vip img{
   max-width: 100%;
   height: 100px;
   width: 100px;
