@@ -1,69 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="no-js">
+	<head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio-P1</title>
-  <link rel="stylesheet" href="style2.css">
-  <script src="script.js"></script>
+    <meta name="author" content="Samnang Thorn"/>
+    <meta charset="utf-8">
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		
+		<!-- Open Graph data -->
+		<meta property="og:site_name" content="Dejan Markovic"/>
+		<meta property="og:title" content="Dejan Markovic" />
+		<meta property="og:description" content="I design & build digital products."/>
+		<meta property="og:image" content="https://dejan.works/img/thumbnail.png" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://dejan.works" />
+  
+		<!-- Title -->
+		<title>Samnang Thorn</title>
 
-</head>
+		<!-- Icons -->
+		<link href="https://dejan.works/img/thumbnail.png" type="image/png" rel="image_src">
+		<link href="https://dejan.works" rel="canonical">
+
+		<link rel="apple-touch-icon" href="https://dejan.works/img/touch-icon-iphone.png" type="image/png">
+		<link rel="apple-touch-icon" href="https://dejan.works/img/touch-icon-ipad.png" type="image/png" sizes="76x76">
+		<link rel="apple-touch-icon" href="https://dejan.works/img/touch-icon-iphone-retina.png" type="image/png" sizes="120x120">
+		<link rel="apple-touch-icon" href="https://dejan.works/img/touch-icon-ipad-retina.png" type="image/png" sizes="152x152">
+		
+		<link rel="icon" href="https://dejan.works/img/favicon-16x16.png" type="image/png" sizes="16x16">  
+		<link rel="icon" href="https://dejan.works/img/favicon-32x32.png" type="image/png" sizes="32x32">  
+		<link rel="icon" href="https://dejan.works/img/favicon-96x96.png" type="image/png" sizes="96x96"> 
+		
+		<!-- CSS -->
+		<link href="projectStyle.css" rel="stylesheet" type="text/css">
+		
+		<!-- Scroll position -->
+		<script type="text/javascript" src="../../js/readingposition.js"></script>
+		<script>
+			var rpi;
+			setTimeout(function waitUntilDomIsReadyLoadingCustomFontsMightOffsetThis() {
+			  rpi = new ReadingPositionIndicator({
+			    rpiArea: '[reading-position]', /* optional, query selector to an element */
+			  }).init();
+			}, 500); 
+		</script>
+		
+		<!-- Yall: Remove the no-js class on the <html> element if JavaScript is on -->
+		<script>document.documentElement.classList.remove("no-js")</script>
+
+    </head>
 <body>
+<!-- START Scroll position -->
+<div class="rpi-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+	<div class="rpi-progress-bar__position" aria-hidden="true"></div>
+	<div class="rpi-progress-bar__percentage"></div>
+</div>
+<!-- END Scroll position -->
 
-  <!-- Top Navigation Bar -->
-  <nav>
-    <div class="top_bar">
-      <div class="logo">
-        Samnang Thorn
-      </div>
-      <ul class="menu">
-        <li class="menu_ele"><a href="index.html">BACK</a></li>
-      </ul>
-    </div>
-  </nav>
+<div class="block-image-overflow"><!- Block hero image overflow ->
+	
+<div class="max-width">
+	<div class="logo">
+		<div class="logo-inner">
+			<a href="index.html">
+				<div class="label-logo on-hover--40 text-color-black"></div>
+			</a>
+		</div>
+	</div>
+	
+	<div class="top-bottom-margin" reading-position>
+		<div class="hide-text-block">
+			<h2 class="text-color-black animate">HattApp</h2>
+		</div>
+		<div class="hide-text-block">
+	 		<p class="size-medium text-color-gray animate" >A Native Android Mobile Application</p>
+		</div>
+		
+		<div class="hero-image animate delay02">
+			<img draggable="false" class="lazy" src="Resources/p1bg.jpg">
+			<noscript><img draggable="false" src="Resources/p1bg.jpg"></noscript>
+		</div>
 
-  <!-- Content -->
-  <div class="content">
-    <div class="project_title">
-      <h1>HattApp - Workout Tracker</h1>
-    </div>
-    <div class="description">
-      <h3>Description</h3>
-      <p>A native android mobile application. Key features: <b>CREATE</b> and <b>CUSTOMIZE</b> exercises and workouts, <b>VISUAL CALENDAR</b> that allows users to schedule their workout routines, Realtime <b>TIMER</b> allows users to have a timer between their exercises during their workout, <b>REPORT</b> allows users to see their past completed or missed workout, and <b>CLOUD SAVING</b> allows user to use the same account from different device.</p>
-      <h3>Technologies Used</h3>
-      <ul style="list-style: none;">
-        <li><b>Languages:</b>
-          <ul>
-            <li>Java</li>
-            <li>XML</li>
-          </ul>
-        </li>
-        <li><b>Framework and tools:</b>
-          <ul>
-            <li>Android Studio</li>
-            <li>Google Authentication</li>
-            <li>Google Firebase</li>
-            <li>SQLite</li>
-          </ul>
-        </li>
-      </ul>
-      <h5 style="margin-top: 20px;"><a href="https://play.google.com/store/apps/details?id=com.samnangthorn.hatt_app10&hl=en_US&gl=US">Access Product</a></h5>
-      <h5>Timeline: 2021 Summer - 2022 Spring</h3>
-      <h5>Team Members: Samnang Thorn</h3>
-      <h5>Source Codes: Private Respository(Not available)</h3>
-    </div>
-  </div>
+		<div class="max-width-70 text-color-black">
+			<h4>Description</h4>
+			<p class="size-large">
+Introducing HattApp, a native Android mobile application designed to elevate users fitness experience. With key features tailored for personalized workout routines, the app empowers users to take control of their fitness journey.
+      </p>
+			<p>
+I started HattApp during the summer break of my sophomore year. My current skills back then were just Java programming and data structure. First, this project seems impossible at the time. However, throughout the process, I was able to acquire the skills I needed to finish this project.
+      </p>
+			<div class="links">
+				<a class="on-hover-40 text-color-red" href="https://play.google.com/store/apps/details?id=com.samnangthorn.hatt_app10" target="_blank">Available on PlayStore</a>
+			</div>
+			<p>
+			<blockquote>
+“It always seem impossible until it's done.”
+<br /><i>by Nelson Mandela</i>
+			</blockquote>
+			</p>
 
-  <footer>
-    <div class="copy_right">
-      <p>&copy; 2023 Samnang Thorn</p>
-    </div>
-  </footer>
+		</div>
 
-  <a href="#top" class="back-to-top">
-    <img src="back_to_top.svg" alt="TO TOP">
-  </a>
+
+<div class="max-width-70 text-color-black">
+			<h4>Technologies and Tools</h4>
+			<p>
+HattApp is a native Android mobile application built using the Android Studio Framework and written in Java and XML. I utilize Google Firebase for the Authentication and Cloud Database. The app can run locally without an internet connection after the account creation using the SQLite database. 
+      </p>
+      <p>
+Note: The below UML diagram doesn't follow the UML standard. It is just a representation for my understanding.
+      </p>
+		</div>
+
+    <div class="images">
+			<img draggable="false" class="lazy" src="Resources/p1img1.jpg">
+			<noscript><img draggable="false" src="Resources/p1img1.jpg"></noscript>
+		</div>
+
+		<div class="max-width-70 text-color-black">
+			<h4>Feature: Exercise and Schedule</h4>
+			<p>
+Craft the unique workout experience by creating and customizing exercises and workouts that align with individual fitness goals. Tailor the routine to meet individual preferences, ensuring a personalized and effective approach to achieving your fitness milestones.
+      </p>
+      <p>
+HattApp app introduces a visual calendar that transforms the way users schedule and track workout routines. Effortlessly plan and organize the exercises, providing a clear overview of the fitness journey. Stay on top of the progress and maintain consistency with a visual representation of the scheduled workouts.
+      </p>
+		</div>
+		
+		<div class="images">
+			<img draggable="false" class="lazy" src="Resources/p1img2.jpg">
+			<noscript><img draggable="false" src="Resources/p1img2.jpg"></noscript>
+		</div>
+		
+		<div class="max-width-70 text-color-black">
+			<h4>Feature: Realtime Tracker and Analysis</h4>
+			<p>
+Experience seamless transitions between exercises with our real-time timer feature. Stay focused and motivated during your workouts by having a timer that guides you through each exercise. Effortlessly manage your workout intervals and optimize your training sessions for maximum efficiency.
+      </p>
+      <p>
+Gain insights into your fitness journey with the comprehensive reporting feature. Track your past completed or missed workouts, allowing you to reflect on your progress and make informed decisions about your fitness routine. Stay accountable and motivated with a detailed overview of your accomplishments.
+      </p>
+		</div>
+		
+		<div class="images">
+			<img draggable="false" class="lazy" src="Resources/p1img3.jpg">
+			<noscript><img draggable="false" src="Resources/p1img3.jpg"></noscript>
+		</div>		
+
+		<div class="max-width-70 text-color-black">		
+			<h4>HattApp - Demo Video</h4>
+      <div class="video">
+        <iframe class="lazy" width="560" height="315" src="https://www.youtube.com/embed/I5KJ7FMOW1M?si=DHvpiZlKDl5YIbig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>	
+		</div>			
+		
+		<div class="max-width-70 text-color-black">
+			<h4>My Other Projects</h4>
+			<div class="links">
+				<a class="on-hover-40 text-color-red" href="" target="_blank">Graph Sandbox</a>
+        <a class="on-hover-40 text-color-red" href="" target="_blank">Attorney Request App</a>
+        <a class="on-hover-40 text-color-red" href="" target="_blank">Track My Workout</a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
 
 </body>
-</html>
+</html>	

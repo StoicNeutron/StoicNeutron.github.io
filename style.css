@@ -515,7 +515,36 @@ nav .menu_ele a:hover {
 
 /* Contact Information */
 .contact{
-  height: 300px;
+  height: 600px;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 20px auto;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+button {
+  background: -webkit-linear-gradient(to right, #243B55, #348AC7); 
+  background: linear-gradient(to right, #243B55, #348AC7);
+  border-radius: 5px;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
 }
 
 .contact .contact_title{
