@@ -71,7 +71,7 @@ nav .menu_ele a:hover {
 /* Introduction Header */
 .intro_header {
 
-  background-image: url('animated2.gif');
+  background-image: url('Resources/animated2.gif');
   background-size: contain;
   background-blend-mode: lighten;
   display: grid;
@@ -515,7 +515,7 @@ nav .menu_ele a:hover {
 
 /* Contact Information */
 .contact{
-  height: 600px;
+  height: 250px;
 }
 
 .contact-form {
