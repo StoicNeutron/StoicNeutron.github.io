@@ -309,7 +309,7 @@ video {
 			}
 		}
 
-/* ------ Logo ------ */
+/* ------ Back Button ------ */
 .logo {
 	float: right;
 }
@@ -751,3 +751,19 @@ video {
 				height: 52vh;
 			}
 		}
+
+		.back-to-top {
+
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			transition: 10s ease;
+		  }
+		  
+		  .back-to-top img{
+		  
+			max-width: 50px;
+			max-height: 50px;
+			border-radius: 25px;
+		  }
