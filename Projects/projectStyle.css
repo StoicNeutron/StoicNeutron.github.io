@@ -382,48 +382,8 @@ video {
 	position:relative;
 }
 
-
-
-
-/*	=====================================================================
-									HOMEPAGE							
-	===================================================================== */
-
-
-.vertical-center {
-	position: absolute;
-	height: 100%;
-	display: -webkit-flex; /* Safari */
-	display: flex;  
-	-webkit-align-items: center; /* Safari */
-	align-items:   center;
-}
-
-.label-hello:after{
-    content:"Hello.";
-}
-.label-hello:hover:after{
-	content:"About";
-}
-.label-iam:after{
-    content:"I am";
-}
-.label-iam:hover:after{
-	content:"Work";
-}
-.label-dejan:after{
-    content:"Dejan";
-}
-.label-dejan:hover:after{
-	content:"Contact";
-}
-.label-error:after{
-	content:"Oops!";
-}
-.label-error:hover:after{
-	content:"Home";
-}
-
+ /* Animation */
+ 
 .animate {
 	-webkit-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
 	-moz-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
@@ -440,8 +400,7 @@ video {
 }
 
 @keyframes animate {
-	0% {opacity: 0;transform: translateY(30vh);} /* WORK ON THISSS! */
-/* 	0% {transform: translateY(100%);} */
+	0% {opacity: 0;transform: translateY(30vh);}
 	100% {opacity: 1;transform: translateY(0%);}	
 }
 
@@ -556,60 +515,9 @@ video {
 	}
 }
 
-
-/*	=====================================================================
-							ABOUT AND CONTACT					
-	===================================================================== */
-
-.max-width-left-70 {	
-	max-width: 70%;
-}
-		@media screen and (max-width: 767px) {
-			.max-width-left-70 {	
-				max-width: 100%;
-			}
-		}
-
-
-/* ------ Copy email to clipboard ------ */
-.label-email {
-	cursor: pointer;
-}
-.label-email:after{
-    content:"hello@dejan.works";
-}
-.label-email:hover:after{
-	content:"Copy to clipboard";
-}
-.label-email:hover:active:after {
-    content:"Email copied";
-}
-		@media screen and (max-width: 767px) {
-			.label-email:hover:after{
-				content:"Copied to clipboard";
-			}
-		}
-
-
-
-/*	=====================================================================
-								WORK LIST							
-	===================================================================== */
-
-.work-block {
-	margin: 12vh 0;
-}
-
-		@media screen and (max-width: 767px) {
-			.work-block {
-				margin-top: 10vh 0;
-			}
-		}
-
 /*	=====================================================================
 								PROJECT PAGE							
 	===================================================================== */
-
 
 .block-image-overflow {
     width: 100%;
