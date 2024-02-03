@@ -261,7 +261,7 @@ a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
 	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
 }
 .on-hover--40:hover {
-	margin-left: -40px;
+	margin-right: 40px;
 	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
 }
 		@media screen and (max-width: 767px) {
@@ -269,9 +269,19 @@ a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
 				margin-left: 0px;	
 			}
 			.on-hover--40:hover {
-				margin-left: 0px;
+				margin-right: 0px;
 			}	
 		}
+
+.prevNext {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.prevNext li{
+	width: 300px;
+}
 
 /* ------ Media ------ */
 img {
